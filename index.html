@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MSMESERVICE</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/boostrap.min.css"
+    />
+  
+     <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/css/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/font.css" />
+  </head>
+  <body>
+    <!-- Navbar (top on large screens, toggle on small) -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h4 class="fw-bold text-primary display-4">MSME</h4></a>
+
+        <!-- Toggle button for small screens -->
+
+        <!-- <button class="menu-toggle" id="menuToggle">&#9776;</button> -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bi bi-list"></i>
+          <!-- hamburger icon -->
+        </button>
+
+        <!-- Normal menu for large screens -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarMain"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar menu for mobile only -->
+    <div id="sidebar">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#service" class="nav-link">Service</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div id="overlay"></div>
+
+    <!-- Sections Home -->
+
+    <section id="home" class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center hero-banner">
+          <!-- Left: Text Content -->
+          <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 " data-aos="fade-right" data-aos-duration="1000">
+            <div class="hero-content">
+              <h1 class="fw-bold">Get Loans Easily with Low Interest</h1>
+              <p class="lead pt-3">
+                Apply online for personal, business, or home loans and get
+                instant approvals with minimal documents.
+              </p>
+              <ul class="list-unstyled mt-3 text-start fs-5 hero-sub-content">
+                <li>
+                  <i class="bi bi-check-circle-fill text-primary"></i> Instant
+                  eligibility check
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-primary"></i> Minimal
+                  documentation
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  Transparent process
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-primary btn-lg mt-5 hero-btn"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+            <div class="hero-image">
+              <img
+                src="assets/images/ban3.webp"
+                alt="Hero Image"
+                class="img-fluid"
+              />
+
+              <div class="customers-badge">
+                <div class="customer-avatars">
+                  <img
+                    src="assets/images/avatar-1.webp"
+                    alt="Customer 1"
+                    class="avatar"
+                  />
+                  <img
+                    src="assets/images/avatar-2.webp"
+                    alt="Customer 2"
+                    class="avatar"
+                  />
+                  <img
+                    src="assets/images/avatar-3.webp"
+                    alt="Customer 3"
+                    class="avatar"
+                  />
+                  <img
+                    src="assets/images/avatar-4.webp"
+                    alt="Customer 4"
+                    class="avatar"
+                  />
+                  <img
+                    src="assets/images/avatar-5.webp"
+                    alt="Customer 5"
+                    class="avatar"
+                  />
+                  <span class="avatar more">12+</span>
+                </div>
+                <p class="mb-0 mt-2">
+                  12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START: Loan Section -->
+    <section class="py-5 bg-light" id="service">
+      <div class="container">
+        <h2 class="text-center display-6 fw-bold text-primary  mb-4">Our Loan Services</h2>
+
+        <!-- Loan Cards Scrollable Row with Centered Side Buttons -->
+        <div class="position-relative loan-scroll-container">
+          <!-- Left Button -->
+          <button
+            class="btn btn-outline-primary scroll-btn scroll-left"
+            id="scroll-left"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <!-- Scrollable Loan Cards -->
+          <div
+            class="d-flex overflow-auto loan-menu-wrapper px-2"
+            id="loanCardRow"
+          >
+            <div
+              class="loan-tab-card card me-3 text-center active pastel-business"
+              data-id="business" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+              <div class="card-body">
+                <i class="bi bi-briefcase-fill display-5 text-primary"></i>
+                <h6 class="mt-2">Business Loan</h6>
+              </div>
+            </div>
+            <div
+              class="loan-tab-card card me-3 text-center pastel-personal"
+              data-id="personal" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-person-fill display-5 text-success"></i>
+                <h6 class="mt-2">Personal Loan</h6>
+              </div>
+            </div>
+            <div
+              class="loan-tab-card card me-3 text-center pastel-education"
+              data-id="education" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-mortarboard-fill display-5 text-info"></i>
+                <h6 class="mt-2">Education Loan</h6>
+              </div>
+            </div>
+            <div
+              class="loan-tab-card card me-3 text-center pastel-auto"
+              data-id="auto" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-truck-front-fill display-5 text-warning"></i>
+                <h6 class="mt-2">Auto Loan</h6>
+              </div>
+            </div>
+            <div
+              class="loan-tab-card card me-3 text-center pastel-property"
+              data-id="property" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-building-fill display-5 text-danger"></i>
+                <h6 class="mt-2">Loan Against Property</h6>
+              </div>
+            </div>
+            <!-- Working Capital -->
+            <div
+              class="loan-tab-card card me-3 text-center pastel-working"
+              data-id="working" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-cash-coin display-5 text-warning"></i>
+                <h6 class="mt-2">Working Capital</h6>
+              </div>
+            </div>
+
+            <!-- Home Loan -->
+            <div
+              class="loan-tab-card card me-3 text-center pastel-home"
+              data-id="homeLoan" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-house-door-fill display-5 text-info"></i>
+                <h6 class="mt-2">Home Loan</h6>
+              </div>
+            </div>
+
+            <!-- Private Finance -->
+            <div
+              class="loan-tab-card card me-3 text-center pastel-private"
+              data-id="private" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-shield-lock-fill display-5 text-danger"></i>
+                <h6 class="mt-2">Private Finance</h6>
+              </div>
+            </div>
+
+            <!-- Auction Property -->
+            <div
+              class="loan-tab-card card me-3 text-center pastel-auction"
+              data-id="auction" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"
+            >
+              <div class="card-body">
+                <i class="bi bi-bank display-5 text-success"></i>
+                <h6 class="mt-2">Auction Property</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Button -->
+          <button
+            class="btn btn-outline-primary scroll-btn scroll-right"
+            id="scroll-right"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- Loan Content -->
+        <div class="loan-content-wrapper mt-5">
+          <!-- business loan content -->
+          <div class="loan-content active" id="business">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1" data-aos="fade-right" data-aos-duration="800">
+                <h3 class="mb-4 fw-bold text-primary">Business Loan</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-briefcase-fill text-primary me-2 fs-5"></i>
+                  Empower your business with tailored financial solutions. We
+                  offer fast approvals and flexible repayment options.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-stars text-success me-2 fs-5"></i>
+                  Features include working capital support, equipment financing,
+                  and expansion funding.
+                </p>
+
+                <div class="mt-5">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-check-fill text-info me-2"></i>Who
+                    Can Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span>Sole Proprietorships</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span>Partnership Firms</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span>Private and Public Limited Companies</span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-check2-circle text-warning me-2"></i
+                    >Eligibility Criteria
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Business operational for at least 1 year</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Profitable for the past 2 financial years</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Valid proof of business ownership</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Last 12 months' bank statements</span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-lightbulb text-secondary me-2"></i
+                    >Additional Notes
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-info-circle text-secondary fs-5 me-2"></i
+                    ><span>Good credit history improves approval chances</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-info-circle text-secondary fs-5 me-2"></i
+                    ><span
+                      >Loan amount and interest rates depend on business
+                      performance</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-info-circle text-secondary fs-5 me-2"></i
+                    ><span>Quick disbursal and flexible tenure available</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center" data-aos="fade-left" data-aos-duration="800">
+                <img
+                  src="assets/images/personal.webp"
+                  alt="Business Loan"
+                  class="img-fluid shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- personal loan content -->
+          <div class="loan-content" id="personal">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Personal Loan</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-person-lines-fill text-primary me-2 fs-5"></i>
+                  Meet your personal financial needs with quick and easy
+                  personal loans. No collateral required.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-gift text-success me-2 fs-5"></i>
+                  Ideal for weddings, vacations, emergencies, or any personal
+                  goal — with minimal paperwork and fast approval.
+                </p>
+
+                <div class="mt-5">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-fill-check text-info me-2"></i>Who
+                    Can Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span>Salaried Individuals</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span>Self-employed Professionals</span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-star-fill text-warning me-2"></i>Benefits of
+                    a Personal Loan
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Financial flexibility for various needs</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Quick access to emergency funds</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Consolidate multiple debts into one</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check-circle text-success fs-5 me-2"></i
+                    ><span>Timely repayment can improve your credit score</span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i
+                      class="bi bi-file-earmark-check-fill text-secondary me-2"
+                    ></i
+                    >Eligibility Criteria
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-square text-success fs-5 me-2"></i
+                    ><span>Must be an Indian citizen</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-square text-success fs-5 me-2"></i
+                    ><span
+                      >Employed with a public sector, private company, or
+                      MNC</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-square text-success fs-5 me-2"></i
+                    ><span>Minimum monthly salary of ₹25,000</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-square text-success fs-5 me-2"></i
+                    ><span>KYC documents (Aadhaar, PAN, Photo)</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-square text-success fs-5 me-2"></i
+                    ><span>Last 3 months’ salary slips</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-square text-success fs-5 me-2"></i
+                    ><span>Last 1 year’s bank statements</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/personal-loan.webp"
+                  alt="Personal Loan"
+                  class="img-fluid shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- education loan content -->
+          <div class="loan-content" id="education">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Education Loan</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-mortarboard-fill text-primary me-2 fs-5"></i>
+                  We offer instant education loans for students pursuing higher
+                  education in India or abroad.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-globe text-success me-2 fs-5"></i>
+                  Covers tuition fees, living expenses, travel, exam fees, and
+                  other education-related costs.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-currency-rupee text-warning me-2 fs-5"></i>
+                  Affordable interest rates with flexible repayment options and
+                  moratorium periods.
+                </p>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-check text-info me-2"></i>Who Can
+                    Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span
+                      >Indian students pursuing undergraduate, postgraduate, or
+                      diploma courses</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span
+                      >Students with confirmed admission in recognized Indian or
+                      foreign institutions</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-dot text-muted fs-5 me-2"></i
+                    ><span
+                      >Co-applicant (parent/guardian) required for loan
+                      approval</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-check-circle-fill text-secondary me-2"></i
+                    >Key Benefits
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i
+                    ><span
+                      >Loan covers tuition fees, hostel, travel, and study
+                      material costs</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i
+                    ><span
+                      >Flexible repayment with EMI options starting after course
+                      completion</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i
+                    ><span>Quick processing and minimal documentation</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i
+                    ><span
+                      >Tax benefits under Section 80E of the Income Tax
+                      Act</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/education.webp"
+                  alt="Education Loan"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- auto loan content -->
+          <div class="loan-content" id="auto">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Auto Loan</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-car-front-fill text-primary me-2 fs-5"></i>
+                  Turn your dream of owning a car into reality with our
+                  hassle-free auto loans.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-speedometer2 text-success me-2 fs-5"></i>
+                  Finance available for **new**, **used**, and **pre-owned**
+                  cars with minimal paperwork and quick approvals.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-currency-rupee text-warning me-2 fs-5"></i>
+                  Attractive interest rates, flexible EMIs, and up to **100%
+                  financing** on ex-showroom price from top brands like
+                  Mahindra, Hyundai, Tata Motors, Maruti Suzuki, Renault, and
+                  more.
+                </p>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-check-circle-fill text-secondary me-2"></i
+                    >Key Features
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span
+                      >Loans available for new, certified pre-owned, and used
+                      vehicles</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Quick and easy application with fast disbursal</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Repayment tenure options up to 7 years</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span
+                      >EMIs tailored to your budget and financial comfort</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/auto.webp"
+                  alt="Auto Loan"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- Loan Against Property content -->
+          <div class="loan-content" id="property">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Loan Against Property</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-building text-secondary me-2 fs-5"></i>
+                  Secure a high-value loan by leveraging your residential or
+                  commercial property as collateral.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-cash-stack text-success me-2 fs-5"></i>
+                  Ideal for funding business expansion, higher education,
+                  medical emergencies, or personal commitments.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-shield-check text-warning me-2 fs-5"></i>
+                  Transparent terms, flexible repayment options, and competitive
+                  interest rates ensure peace of mind.
+                </p>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-bounding-box text-info me-2"></i>Who
+                    Can Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Salaried Individuals</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Self-employed Professionals</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Business Owners and Entrepreneurs</span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-star-fill text-primary me-2"></i>Key
+                    Benefits
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span
+                      >Loan amounts up to 70% of the property's market
+                      value</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Repayment tenure up to 15 years</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Lower interest rates compared to personal loans</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Minimal documentation and fast processing</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/lap.webp"
+                  alt="Loan Against Property"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- Working Capital Loan content -->
+          <div class="loan-content" id="working">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Working Capital Loan</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-graph-up-arrow text-success me-2 fs-5"></i>
+                  Boost your business momentum with fast and flexible working
+                  capital finance — including unsecured cash credit and
+                  overdraft.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-currency-exchange text-warning me-2 fs-5"></i>
+                  Designed to meet short-term funding needs such as raw
+                  materials, payroll, or overhead costs — helping MSMEs operate
+                  smoothly.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-lightbulb text-secondary me-2 fs-5"></i>
+                  Ensure uninterrupted cash flow and seize new growth
+                  opportunities without delay.
+                </p>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-badge text-info me-2"></i>Who Can
+                    Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Self-employed Professionals</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>MSME Business Owners</span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-star-fill text-primary me-2"></i>Key
+                    Benefits
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Unsecured loans with minimal documentation</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Quick approval and fast disbursal</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span
+                      >Flexible repayment tenure with competitive interest
+                      rates</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span
+                      >Maintain healthy working capital to fuel operations and
+                      growth</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/capital.webp"
+                  alt="Working Capital Loan"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- home loan content -->
+          <div class="loan-content" id="homeLoan">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Home Loan</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-house-check-fill text-success me-2 fs-5"></i>
+                  Turn your dream of owning a home into reality with our easy
+                  and flexible home loan options.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-percent text-warning me-2 fs-5"></i>
+                  Enjoy attractive interest rates, minimal processing fees, and
+                  no pre-closure charges.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-building text-secondary me-2 fs-5"></i>
+                  Whether you're purchasing a new house, residential plot, or
+                  renovating your home — we’ve got you covered.
+                </p>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-badge text-info me-2"></i>Who Can
+                    Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Individual Salaried Professionals</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Self-employed Business Owners</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span
+                      >Self-employed Professionals (Doctors, CAs, etc.)</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-star-fill text-primary me-2"></i>Key
+                    Benefits
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Up to 90% financing on property value</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Long repayment tenure up to 30 years</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Fast approval and doorstep assistance</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Tax benefits under Section 80C & 24(b)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/ban1.webp"
+                  alt="Home Loan"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- private finance content -->
+          <div class="loan-content" id="private">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">Private Finance</h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-cash-coin text-success me-2 fs-5"></i>
+                  Quick and hassle-free private funding tailored for urgent
+                  business or personal needs.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-graph-up-arrow text-warning me-2 fs-5"></i>
+                  Loan eligibility is based on your recent bank statement —
+                  CIBIL score is not mandatory.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-hourglass-split text-secondary me-2 fs-5"></i>
+                  Designed for short-term requirements with flexible repayment
+                  options and competitive rates.
+                </p>
+
+                <div class="mt-4">
+                  <h5 class="fw-semibold text-dark mb-3">
+                    <i class="bi bi-person-check-fill text-info me-2"></i>Who
+                    Can Apply
+                  </h5>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Business Owners facing urgent funding gaps</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Self-employed professionals</span>
+                  </div>
+                  <div class="d-flex align-items-start mb-2">
+                    <i class="bi bi-check2-circle text-success fs-5 me-2"></i>
+                    <span>Individuals with strong bank transactions</span>
+                  </div>
+                </div>
+
+                <div class="mt-3 text-muted small">
+                  <strong>Note:</strong> CIBIL score is not required. For more
+                  details, please contact us directly.
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/finance.webp"
+                  alt="Private Finance"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+           <!-- Auction Property Deals content -->
+          <div class="loan-content" id="auction">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-7 order-2 order-md-1">
+                <h3 class="mb-4 fw-bold text-primary">
+                  Auction Property Deals
+                </h3>
+
+                <p class="fs-6">
+                  <i class="bi bi-house-check text-success me-2 fs-5"></i>
+                  We are directly tied up with leading Banks and NBFCs to
+                  provide access to prime auction properties.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-tag-fill text-danger me-2 fs-5"></i>
+                  Find properties at below-market prices in top city locations —
+                  ideal for investment or personal use.
+                </p>
+                <p class="fs-6">
+                  <i class="bi bi-currency-rupee text-warning me-2 fs-5"></i>
+                  Full assistance in property selection, documentation, and
+                  finance through trusted sources.
+                </p>
+
+                <div class="mt-3 text-muted small">
+                  <strong>Note:</strong> For current listings and exclusive
+                  deals, please contact us directly.
+                </div>
+              </div>
+
+              <div class="col-md-5 order-1 order-md-2 text-center">
+                <img
+                  src="assets/images/auction.webp"
+                  alt="Auction Property"
+                  class="img-fluid  shadow-sm service-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+   <!-- Why Choose Us section -->
+    <section id="service" class="py-5 why-choose-us">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4 display-6 text-primary" data-aos="fade-up" data-aos-duration="800">Why Choose Us</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="feature-box p-4 rounded-4 h-100 text-center bg-white shadow box-1">
+              <div class="icon-circle text-info mb-3 glow">
+                <i class="bi bi-percent fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">Low Interest Rates</h5>
+              <p class="text-muted small">
+                Enjoy flexible repayment options with the lowest market rates.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="feature-box p-4 rounded-4 h-100 text-center bg-white shadow box-2"
+            >
+              <div class="icon-circle text-success mb-3 glow">
+                <i class="bi bi-lightning-charge fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">Instant Approval</h5>
+              <p class="text-muted small">
+                Check your eligibility and get quick loan approvals in minutes.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="feature-box p-4 rounded-4 h-100 text-center bg-white shadow box-3"
+            >
+              <div class="icon-circle text-warning mb-3 glow">
+                <i class="bi bi-headset fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">24/7 Support</h5>
+              <p class="text-muted small">
+                We’re always here to help you with expert customer service.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="feature-box p-4 rounded-4 h-100 text-center bg-white shadow box-4"
+            >
+              <div class="icon-circle text-danger mb-3 glow">
+                <i class="bi bi-laptop fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">100% Online Process</h5>
+              <p class="text-muted small">
+                Apply from anywhere using your phone or laptop, hassle-free.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Talk to expert -->
+    <section id="service" class="py-5 text-white talk-expert">
+      <div class="container text-center">
+        <h2 class="mb-4 display-6 fw-bold" data-aos="fade-up" data-aos-duration="800">Talk to Our Loan Expert</h2>
+        <p class="mb-5 fs-5" data-aos="fade-up" data-aos-delay="100">
+          Need help choosing the right loan? Our experts are here to guide you!
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- WhatsApp -->
+          <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div
+              class="contact-box h-100 p-4 bg-white text-dark rounded-4 shadow text-center"
+            >
+              <div
+                class="icon-circle bg-success bg-opacity-10 text-success mb-3"
+              >
+                <i class="bi bi-whatsapp fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">WhatsApp Us</h5>
+              <p>
+                <a
+                  href="https://wa.me/91XXXXXXXXXX"
+                  class="text-decoration-none text-dark"
+                  target="_blank"
+                  >+91 XXXXXXXXXX</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div
+              class="contact-box h-100 p-4 bg-white text-dark rounded-4 shadow text-center"
+            >
+              <div class="icon-circle bg-danger bg-opacity-10 text-danger mb-3">
+                <i class="bi bi-envelope fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">Email Us</h5>
+              <p>
+                <a
+                  href="mailto:yourmail@example.com"
+                  class="text-decoration-none text-dark"
+                  >yourmail@example.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="300">
+            <div
+              class="contact-box h-100 p-4 bg-white text-dark rounded-4 shadow text-center"
+            >
+              <div
+                class="icon-circle bg-primary bg-opacity-10 text-primary mb-3"
+              >
+                <i class="bi bi-telephone fs-1"></i>
+              </div>
+              <h5 class="fw-semibold mb-2">Call Us</h5>
+              <p>
+                <a
+                  href="tel:+91XXXXXXXXXX"
+                  class="text-decoration-none text-dark"
+                  >+91 XXXXXXXXXX</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- About us section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 display-6 fw-bold text-primary" data-aos="fade-up">Who We Are</h2>
+        <div class="row g-5 align-items-center">
+          <!-- Left-side Image -->
+          <div class="col-md-6 text-center" data-aos="fade-right" data-aos-delay="100">
+            <img
+              src="assets/images/ban2.webp"
+              class="img-fluid rounded-4 shadow about-image"
+              alt="About Us"
+            />
+          </div>
+
+          <!-- Right-side Content -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <h3 class="mb-3 text-primary">Empowering Your Financial Journey</h3>
+            <p class="mb-4 text-muted">
+              We are more than a loan provider — we're your financial growth
+              partner. Our mission is to simplify finance and make funds accessible
+              for dreams big or small — from personal needs to business ambitions.
+            </p>
+
+            <h4 class="mb-3 fw-semibold">What Sets Us Apart</h4>
+            <ul class="list-unstyled text-muted">
+              <li class="d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="300" >
+                <div class="bg-primary bg-opacity-10 text-primary p-2 rounded-circle me-3">
+                  <i class="bi bi-bullseye fs-5"></i>
+                </div>
+                <span>Client-first approach with tailored financial solutions.</span>
+              </li>
+              <li class="d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="400" >
+                <div class="bg-success bg-opacity-10 text-success p-2 rounded-circle me-3">
+                  <i class="bi bi-cash-stack fs-5"></i>
+                </div>
+                <span>Comprehensive range: Business, Personal, Auto, Education loans.</span>
+              </li>
+              <li class="d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="500">
+                <div class="bg-warning bg-opacity-10 text-warning p-2 rounded-circle me-3">
+                  <i class="bi bi-emoji-smile fs-5"></i>
+                </div>
+                <span>Simple processes, transparent terms, and responsive support.</span>
+              </li>
+              <li class="d-flex align-items-start" data-aos="fade-up" data-aos-delay="600">
+                <div class="bg-danger bg-opacity-10 text-danger p-2 rounded-circle me-3">
+                  <i class="bi bi-globe fs-5"></i>
+                </div>
+                <span>100% online applications — easy access anytime, anywhere.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <!-- our achivements -->
+     <section id="stats" class="py-5 bg-dark text-white text-center stats-section">
+      <div class="container">
+        <h2 class="fw-bold display-6 mb-5 text-light" data-aos="fade-up">Our Achievements</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-box p-4 rounded-4 bg-gradient shadow">
+              <h3 class="counter display-4 fw-bold" data-target="350">0</h3>
+              <p class="fs-5 mt-2"> Portfolio Customers</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-box p-4 rounded-4 bg-gradient shadow">
+              <h3 class="counter display-4 fw-bold" data-target="100">0</h3>
+              <p class="fs-5 mt-2">Crores Loan Handling</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300" >
+            <div class="stat-box p-4 rounded-4 bg-gradient shadow">
+              <h3 class="counter display-4 fw-bold" data-target="10">0</h3>
+              <p class="fs-5 mt-2"> Years in Banking</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5 display-6 fw-bold text-primary" data-aos="fade-up">Contact Us</h2>
+        <div class="row g-4 align-items-stretch">
+          
+          <!-- Google Map -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="h-100 rounded-4 overflow-hidden shadow">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1886520782323!2d80.04678197454453!3d12.83108281794449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260db1ff54b03%3A0xa8af6b8bb6419d6f!2sZoho%20Corporation!5e0!3m2!1sen!2sin!4v1747249357310!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="min-height: 300px; border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Card -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body p-4">
+                <h4 class="card-title mb-4 text-primary fw-semibold" data-aos="fade-up" data-aos-delay="100">Talk to Our Expert</h4>
+
+                <div class="d-flex align-items-start mb-3"data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt-fill text-danger fs-5 me-3"></i>
+                  <p class="mb-0 text-muted">No.123, Anna Salai, Chennai, Tamil Nadu</p>
+                </div>
+
+                <div class="d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone-fill text-primary fs-5 me-3"></i>
+                  <a href="tel:+919876543210" class="text-dark text-decoration-none">
+                    +91 98765 43210
+                  </a>
+                </div>
+
+                <div class="d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope-fill text-danger fs-5 me-3"></i>
+                  <a href="mailto:info@example.com" class="text-dark text-decoration-none">
+                    info@example.com
+                  </a>
+                </div>
+
+                <div class="d-flex align-items-start" data-aos="fade-up" data-aos-delay="500">
+                  <i class="bi bi-whatsapp text-success fs-5 me-3"></i>
+                  <a href="https://wa.me/919876543210" class="text-dark text-decoration-none">
+                    Chat on WhatsApp
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+
+    <section id="contact" class="py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+    <h2 class="text-center fw-bold mb-5 text-primary display-6" data-aos="fade-down">Frequently Asked Questions</h2>
+    <div class="accordion custom-accordion" id="faqAccordion">
+
+      <div class="accordion-item border-0 shadow-sm mb-3 rounded-3"  data-aos="fade-up" data-aos-delay="100">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Do I need collateral for a business loan?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            No, most business loans are unsecured and do not require collateral.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 shadow-sm mb-3 rounded-3" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            How long does loan approval take?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Typically within 72 hours, depending on your documents and eligibility.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 shadow-sm mb-3 rounded-3"data-aos="fade-up" data-aos-delay="300">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            What can I use a business loan for?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            For expansion, inventory, hiring, marketing, renovation, or upgrading technology.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 shadow-sm mb-3 rounded-3" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            What documents are required?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            ID proof, business registration, bank statements, and income proof are generally required.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 shadow-sm mb-3 rounded-3" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            What are the interest rates?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Rates vary based on your profile and lender policies, but we ensure competitive rates.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 shadow-sm mb-3 rounded-3" data-aos="fade-up" data-aos-delay="600">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+            Can I prepay my business loan?
+          </button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Yes, most lenders allow prepayment with minimal or no charges. Please check specific terms.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+   </section>
+
+
+    <!-- customer testmonials -->
+
+    <section id="contact" class="testimonials py-5 bg-light" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 class="mb-4" data-aos="fade-down">What Our Customers Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card p-4 shadow-sm h-100" data-aos="zoom-in" data-aos-delay="100">
+              <p>
+                “The loan process was so easy and fast! Got approval within 24
+                hours.”
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="assets/images/avatar-1.webp"
+                  alt="Customer 1"
+                  class="rounded-circle"
+                  width="50"
+                />
+                <div class="ms-3 text-start">
+                  <strong>Ramesh K.</strong><br />
+                  <small>Personal Loan</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4"  data-aos="zoom-in" data-aos-delay="200">
+            <div class="card p-4 shadow-sm h-100">
+              <p>“Great service and low interest rates. Highly recommended.”</p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="assets/images/avatar-2.webp"
+                  alt="Customer 2"
+                  class="rounded-circle"
+                  width="50"
+                />
+                <div class="ms-3 text-start">
+                  <strong>Priya M.</strong><br />
+                  <small>Business Loan</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card p-4 shadow-sm h-100">
+              <p>
+                “They made my dream of studying abroad come true with an
+                education loan.”
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img
+                  src="assets/images/avatar-3.webp"
+                  alt="Customer 3"
+                  class="rounded-circle"
+                  width="50"
+                />
+                <div class="ms-3 text-start">
+                  <strong>Neha P.</strong><br />
+                  <small>Education Loan</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="footer text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Company Info -->
+      <div class="col-md-4">
+        <h5 class="mb-3">MSME</h5>
+        <p class="text-light">
+          Empowering your financial future with fast, flexible, and transparent loan solutions tailored for individuals and businesses.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h6 class="mb-3 text-uppercase">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#service" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-3">
+        <h6 class="mb-3 text-uppercase">Our Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="#service" class="text-light text-decoration-none">Business Loan</a></li>
+          <li><a href="#service" class="text-light text-decoration-none">Personal Loan</a></li>
+          <li><a href="#service" class="text-light text-decoration-none">Education Loan</a></li>
+          <li><a href="#service" class="text-light text-decoration-none">Auto Loan</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h6 class="mb-3 text-uppercase">Contact</h6>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Anna Salai, Chennai</p>
+        <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +91 98765 43210</p>
+        <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i> info@example.com</p>
+
+        <!-- Social Icons -->
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="text-center mt-4 pt-3 border-top border-secondary">
+      <small class="text-light">&copy; 2025 Ess-Matrix Infotech Pvt. ltd. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+    <!-- Scroll Top arrow -->
+    <button id="scrollTopBtn" title="Go to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- WhatsApp Sticky Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  </script>
+
+
+    <!-- products tabs card and relative content visible-->
+    <script>
+      const tabs = document.querySelectorAll(".loan-tab-card");
+      const contents = document.querySelectorAll(".loan-content");
+      const loanRow = document.getElementById("loanCardRow");
+      const scrollLeftBtn = document.getElementById("scroll-left");
+      const scrollRightBtn = document.getElementById("scroll-right");
+
+      // Tab switching
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const id = tab.getAttribute("data-id");
+          tabs.forEach((t) => t.classList.remove("active"));
+          contents.forEach((c) => c.classList.remove("active"));
+          tab.classList.add("active");
+          document.getElementById(id).classList.add("active");
+        });
+      });
+
+      // Scroll button actions
+      scrollLeftBtn.addEventListener("click", () => {
+        loanRow.scrollBy({ left: -250, behavior: "smooth" });
+      });
+      scrollRightBtn.addEventListener("click", () => {
+        loanRow.scrollBy({ left: 250, behavior: "smooth" });
+      });
+
+      // Update button visibility state
+      function updateScrollButtons() {
+        const maxScrollLeft = loanRow.scrollWidth - loanRow.clientWidth;
+        scrollLeftBtn.classList.toggle("disabled", loanRow.scrollLeft <= 0);
+        scrollRightBtn.classList.toggle(
+          "disabled",
+          loanRow.scrollLeft >= maxScrollLeft - 1
+        );
+      }
+
+      // On scroll or resize, check visibility
+      loanRow.addEventListener("scroll", updateScrollButtons);
+      window.addEventListener("resize", updateScrollButtons);
+      window.addEventListener("load", updateScrollButtons);
+    </script>
+
+    <!-- desktop also swipe  -->
+    <script>
+      const scrollContainer = document.getElementById("loanCardRow");
+
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      scrollContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        scrollContainer.classList.add("dragging");
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+      });
+
+      scrollContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+        scrollContainer.classList.remove("dragging");
+      });
+
+      scrollContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        scrollContainer.classList.remove("dragging");
+      });
+
+      scrollContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 1.5; // scroll speed
+        scrollContainer.scrollLeft = scrollLeft - walk;
+      });
+    </script>
+
+
+   <!-- counter stats animation -->
+    
+<script>
+  const counters = document.querySelectorAll('.counter');
+  let animated = false;
+
+  function animateCounters() {
+    if (animated) return; // Only run once
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const label = counter.nextElementSibling?.textContent || '';
+      const isCrores = /crores/i.test(label); // Case-insensitive match
+      const increment = target / 100;
+
+      let count = 0;
+      const update = () => {
+        count += increment;
+        if (count < target) {
+          counter.innerText = isCrores ? Math.floor(count) + '+' : Math.floor(count);
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target + '+';
+        }
+      };
+      update();
+    });
+
+    animated = true;
+  }
+
+  window.addEventListener('scroll', () => {
+    const section = document.querySelector('#stats');
+    if (!section) return;
+
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      animateCounters();
+    }
+  });
+</script>
+
+
+
+
+
+  </body>
+</html>

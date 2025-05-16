@@ -1,0 +1,43 @@
+/* Bootstrap Icons */
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("../vendor/fonts/bootstrap-icons.woff2") format("woff2"),
+         url("../vendor/fonts/bootstrap-icons.woff") format("woff");
+  }
+
+  /* Inter Regular */
+@font-face {
+    font-family: "Inter";
+    src: url("../vendor/fonts/Inter_28pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Inter Medium */
+  @font-face {
+    font-family: "Inter";
+    src: url("../vendor/fonts/Inter_28pt-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Inter SemiBold */
+  @font-face {
+    font-family: "Inter";
+    src: url("../vendor/fonts/Inter_28pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Inter ExtraBold */
+  @font-face {
+    font-family: "Inter";
+    src: url("../vendor/fonts/Inter_28pt-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
