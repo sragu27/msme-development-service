@@ -67,9 +67,12 @@ ul {
   --sectionBackground: #ece8f6; /* Light lavender-ish section bg */
 }
 
-#menuToggle i{
-   font-size: 2rem; 
+.menu-toggle i{
+   font-size: 2rem !important; 
   cursor: pointer;
+}
+.menu-toggle{
+  padding: 8px;
 }
 
 
