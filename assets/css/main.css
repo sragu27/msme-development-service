@@ -67,6 +67,11 @@ ul {
   --sectionBackground: #ece8f6; /* Light lavender-ish section bg */
 }
 
+#menuToggle i{
+   font-size: 2rem; 
+  cursor: pointer;
+}
+
 
   .text-primary {
    color: var(--primaryColor) !important;
