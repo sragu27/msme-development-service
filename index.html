@@ -80,7 +80,7 @@
           <!-- Left: Text Content -->
           <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 " data-aos="fade-right" data-aos-duration="1000">
             <div class="hero-content">
-              <h1 class="fw-bold">Get Loans Easily with Low Interest</h1>
+              <h1 class="fw-bold">Grow your Business with Unsecured Business Loan</h1>
               <p class="lead pt-3">
                 Apply online for personal, business, or home loans and get
                 instant approvals with minimal documents.
@@ -1387,7 +1387,31 @@
       </div>
     </section>
 
-    <!-- Footer -->
+<!-- First Visit Modal -->
+<div class="modal fade" id="firstVisitModal" tabindex="-1" aria-labelledby="firstVisitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow-lg rounded-4 border-0">
+      <div class="modal-header border-0 pb-1">
+        <h5 class="modal-title fw-semibold text-primary d-flex align-items-center gap-2" id="firstVisitModalLabel">
+          🙌 <span>100% Commission-Free Service</span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-secondary fs-6 pt-1">
+        We’re your trusted advisors — not brokers. <br class="d-none d-sm-inline">
+        No hidden fees. No commissions. Just honest, expert help focused on your goals.
+      </div>
+      <div class="modal-footer border-0 pt-1">
+        <button type="button" class="btn btn-primary px-4 fw-semibold" data-bs-dismiss="modal">Got it</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <!-- Footer -->
 <footer class="footer text-white pt-5 pb-4">
   <div class="container">
@@ -1480,6 +1504,23 @@
       easing: 'ease-in-out',
     });
   </script>
+<!-- First Visit Modal start -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const modalEl = document.getElementById('firstVisitModal');
+        const hasVisited = localStorage.getItem('visitedBefore');
+
+        if (!hasVisited && modalEl) {
+          const popup = new bootstrap.Modal(modalEl);
+          setTimeout(() => {
+            popup.show();
+            localStorage.setItem('visitedBefore', 'true');
+          }, 2000);
+        }
+      });
+   </script> <!-- First Visit Modal End -->
+
+
 
 
     <!-- products tabs card and relative content visible-->
@@ -1601,8 +1642,6 @@
     }
   });
 </script>
-
-
 
 
 

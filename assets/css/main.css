@@ -206,16 +206,6 @@ section:nth-of-type(even) {
   width: 50%;
 }
 
-/* .hero-content p {
-  color: #343a40; 
-  font-size: 1.2rem;
-}
-.hero .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-} */
 
 .hero-content h1 {
   font-size: clamp(1.8rem, 5vw, 3rem);
@@ -378,6 +368,7 @@ section:nth-of-type(even) {
      border-bottom: 4px solid transparent;
      border-radius: 12px;
      background-color: #212529;
+     padding: 12px;
   }
  
    .loan-tab-card:hover {
@@ -700,3 +691,9 @@ section:nth-of-type(even) {
 .footer{
   background-color: var(--primaryDark);
 }
+
+#firstVisitModal .btn:first-child:active{
+  background-color: var(--primaryDark);
+    border-color: var(--primaryDark)
+}
+
