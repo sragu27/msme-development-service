@@ -1,5 +1,5 @@
 html {
-    scroll-padding-top: 70px !important;
+    scroll-padding-top: 90px;
     scroll-behavior: smooth;
   }
 
@@ -42,7 +42,8 @@ ul {
 }
 
   body {
-    font-family: "Inter", sans-serif;
+    
+    font-family: "Poppins", "Inter",sans-serif; 
     font-weight: 400; /* for Regular */
   }
   
@@ -165,9 +166,6 @@ section:nth-of-type(even) {
     width: 90% !important;
     margin: 0 auto;
    }
-   .customers-badge{
-    display: none;
-   }
 
   }
 
@@ -205,7 +203,7 @@ section:nth-of-type(even) {
 
 /* Hero or home page */
 .hero{
-  margin-top: 4rem;
+   margin-top: 3rem; 
 }
 .hero {
   height: auto;
@@ -220,7 +218,7 @@ section:nth-of-type(even) {
 
 
 .hero-content h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
 }
 
 .hero-content p.lead {
@@ -297,7 +295,8 @@ section:nth-of-type(even) {
 
 .hero .customers-badge p {
   font-size: 0.875rem;
-  color: color-mix(in srgb, var(--darkBackgroundText), transparent 40%);
+  /* color: color-mix(in srgb, var(--darkBackgroundText), transparent 40%); */
+  text-align: justify;
 }
 
 @keyframes float-badge {
