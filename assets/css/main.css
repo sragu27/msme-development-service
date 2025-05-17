@@ -67,6 +67,10 @@ ul {
   --sectionBackground: #ece8f6; /* Light lavender-ish section bg */
 }
 
+.navbar-brand img{
+  width: 80% !important;
+}
+
 .menu-toggle i{
    font-size: 2rem !important; 
   cursor: pointer;
