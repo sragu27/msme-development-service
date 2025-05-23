@@ -67,6 +67,9 @@ ul {
   --darkBackgroundText: #2d2d2d;
   --sectionBackground: #ece8f6; /* Light lavender-ish section bg */
 }
+.navbar.bg-light{
+  background-color: var(--white) !important;
+}
 
 .navbar-brand img{
   width: 80% !important;
